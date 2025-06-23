@@ -1,0 +1,32 @@
+import os
+print(""" 
+-------------------------------------------------------
+\t\t welcome to world of automation
+------------------------------------------------------
+1.date command
+2. cal command
+3. ifconfig
+4.ls """
+)
+choice = input("enter choice")
+if choice == "1":
+    user = input("enter user name")
+    ip = input("enter your ip address")
+    os.system(f"ssh {user}@{ip} date ")
+elif choice == "2":
+    user = input("enter user name")
+    ip = input("enter your ip address")
+    os.system(f"ssh {user}@{ip} cal ")
+elif choice == "3":
+    user = input("enter user name")
+    ip = input("enter your ip address")
+    os.system(f"ssh {user}@{ip} ls ")
+elif choice =="4":
+     user = input("enter user name")
+     ip = input("enter your ip address")
+     os.system(f"ssh {user}@{ip} ifconfig ")
+else:
+     print("idk")
+
+
+
